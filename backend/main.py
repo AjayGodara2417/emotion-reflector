@@ -13,7 +13,7 @@ app = FastAPI(
 # Update allow_origins in production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ✅ Replace with frontend URL in production
+    allow_origins=["https://emotion-reflector-ecru.vercel.app/"],  # ✅ Replace with frontend URL in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
