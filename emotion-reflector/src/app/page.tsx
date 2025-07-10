@@ -20,7 +20,7 @@ export default function HomePage() {
     setResult(null)
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/analyze', {
+      const res = await fetch('https://emotion-backend.up.railway.app/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text }),
