@@ -5,7 +5,7 @@ import random
 
 app = FastAPI()
 
-# Allow frontend requests (CORS setup)
+# Allow frontend requests ( CORS setup )
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
